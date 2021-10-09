@@ -3,14 +3,14 @@ import React from 'react'
 import { Header } from './Header'
 import './page.css'
 
-interface PageProps {
+export interface PageProps {
   user?: unknown
   onLogin: () => void
   onLogout: () => void
   onCreateAccount: () => void
 }
 
-export const Page = ({
+export const Page: React.FunctionComponent<PageProps> = ({
   user,
   onLogin,
   onLogout,

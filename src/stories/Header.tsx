@@ -3,14 +3,14 @@ import React from 'react'
 import { Button } from './Button'
 import './header.css'
 
-interface HeaderProps {
+export interface HeaderProps {
   user?: unknown
   onLogin: () => void
   onLogout: () => void
   onCreateAccount: () => void
 }
 
-export const Header = ({
+export const Header: React.FunctionComponent<HeaderProps> = ({
   user,
   onLogin,
   onLogout,
