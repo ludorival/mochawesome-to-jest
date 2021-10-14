@@ -1,8 +1,7 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
-
+//import results from './reports/jest-test-results.json'
 import { Button } from './Button'
-
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
   title: 'Example/Button',
@@ -10,6 +9,9 @@ export default {
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     backgroundColor: { control: 'color' },
+  },
+  parameters: {
+    jest: 'Button.stories',
   },
 } as ComponentMeta<typeof Button>
 

@@ -1,0 +1,10 @@
+{
+    "fixturesFolder": false,
+    "testFiles": "**/*.test.tsx",
+    "componentFolder": "src/stories",
+    "reporter": "cypress-mochawesome-reporter",
+    "reporterOptions": {
+        "saveJson": true,
+        "charts": true
+    }
+}

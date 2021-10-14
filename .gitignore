@@ -7,3 +7,7 @@ node_modules/
 # Project files:
 
 .npmrc
+yarn-error.log
+cypress/reports/
+cypress/videos/
+cypress/screenshots/

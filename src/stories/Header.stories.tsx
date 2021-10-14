@@ -6,6 +6,9 @@ import { Header } from './Header'
 export default {
   title: 'Example/Header',
   component: Header,
+  parameters: {
+    jest: 'Header.stories',
+  },
 } as ComponentMeta<typeof Header>
 
 const Template: ComponentStory<typeof Header> = (args) => <Header {...args} />

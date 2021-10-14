@@ -1,0 +1,345 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 8,
+    "passes": 7,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-10-14T21:19:40.280Z",
+    "end": "2021-10-14T21:19:54.415Z",
+    "duration": 4868,
+    "testsRegistered": 8,
+    "passPercent": 87.5,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a5a09db6-9588-4709-8e26-4a7855e1805a",
+      "title": "",
+      "fullFile": "src/stories/Header.stories.test.tsx",
+      "file": "src/stories/Header.stories.test.tsx",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "343f8329-1e05-46db-a153-6bc1a733efb0",
+          "title": "Header stories",
+          "fullFile": "src/stories/Header.stories.test.tsx",
+          "file": "src/stories/Header.stories.test.tsx",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should display the login button when logged out",
+              "fullTitle": "Header stories should display the login button when logged out",
+              "timedOut": null,
+              "duration": 61,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0,_cypress_react__WEBPACK_IMPORTED_MODULE_1__.mount)( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(LoggedOut, null));\ncy.get(\"[data-testid=\\\"login-btn\\\"]\").should('be.visible');\ncy.get(\"[data-testid=\\\"create-account-btn\\\"]\").should('be.visible');\ncy.get(\"[data-testid=\\\"logout-btn\\\"]\").should('not.exist');",
+              "err": {},
+              "uuid": "57bb9d3a-9169-4157-8510-fd20cff11ef6",
+              "parentUUID": "343f8329-1e05-46db-a153-6bc1a733efb0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should display the login button when logged out",
+              "fullTitle": "Header stories should display the login button when logged out",
+              "timedOut": null,
+              "duration": 61,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0,_cypress_react__WEBPACK_IMPORTED_MODULE_1__.mount)( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(LoggedIn, null));\ncy.get(\"[data-testid=\\\"login-btn\\\"]\").should('not.exist');\ncy.get(\"[data-testid=\\\"create-account-btn\\\"]\").should('not.exist');\ncy.get(\"[data-testid=\\\"logout-btn\\\"]\").should('be.visible');",
+              "err": {},
+              "uuid": "166b7e7b-2af7-47c9-9c13-a7ca3d1dde31",
+              "parentUUID": "343f8329-1e05-46db-a153-6bc1a733efb0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "57bb9d3a-9169-4157-8510-fd20cff11ef6",
+            "166b7e7b-2af7-47c9-9c13-a7ca3d1dde31"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 122,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "c3eb2c7e-701a-422d-95bb-87f1d4729aa3",
+      "title": "",
+      "fullFile": "src/stories/Page.stories.test.tsx",
+      "file": "src/stories/Page.stories.test.tsx",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "should display the header",
+          "fullTitle": "should display the header",
+          "timedOut": null,
+          "duration": 66,
+          "state": "passed",
+          "speed": "medium",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "(0,_cypress_react__WEBPACK_IMPORTED_MODULE_1__.mount)( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(LoggedOut, null));\ncy.get('header').should('be.visible');",
+          "err": {},
+          "uuid": "95eddb00-1a62-4186-a76f-4e014277d948",
+          "parentUUID": "c3eb2c7e-701a-422d-95bb-87f1d4729aa3",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "95eddb00-1a62-4186-a76f-4e014277d948"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 66,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "be9b85ca-c533-42ec-b712-8da5037fab1e",
+      "title": "",
+      "fullFile": "src/stories/Button.stories.test.tsx",
+      "file": "src/stories/Button.stories.test.tsx",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "55ad0bb4-3c64-44cb-8202-ac0dce8506ae",
+          "title": "Test Button stories",
+          "fullFile": "src/stories/Button.stories.test.tsx",
+          "file": "src/stories/Button.stories.test.tsx",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should call the callback function when button is clicked",
+              "fullTitle": "Test Button stories should call the callback function when button is clicked",
+              "timedOut": null,
+              "duration": 189,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var handleClick = cy.stub().as('onClick');\n(0,_cypress_react__WEBPACK_IMPORTED_MODULE_1__.mount)( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Primary, {\n  onClick: handleClick\n}));\ncy.get('button').click();\ncy.get('@onClick').should('be.called');",
+              "err": {},
+              "uuid": "6fcb0cad-d028-40e8-9382-dfbdba121281",
+              "parentUUID": "55ad0bb4-3c64-44cb-8202-ac0dce8506ae",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [
+            {
+              "uuid": "96d8da06-c759-412d-9b87-8c23ee982dee",
+              "title": "Primary style",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should have the primary class",
+                  "fullTitle": "Test Button stories Primary style should have the primary class",
+                  "timedOut": null,
+                  "duration": 51,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "(0,_cypress_react__WEBPACK_IMPORTED_MODULE_1__.mount)( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Large, null));\ncy.get('button').should('have.class', 'storybook-button--large');",
+                  "err": {},
+                  "uuid": "829d5b77-851f-4d23-bee4-14c7438bb89e",
+                  "parentUUID": "96d8da06-c759-412d-9b87-8c23ee982dee",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should have the large class",
+                  "fullTitle": "Test Button stories Primary style should have the large class",
+                  "timedOut": null,
+                  "duration": 43,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "(0,_cypress_react__WEBPACK_IMPORTED_MODULE_1__.mount)( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Large, null));\ncy.get('button').should('have.class', 'storybook-button--large');",
+                  "err": {},
+                  "uuid": "0adfcc9d-aaf7-4f8e-8641-e499f805992d",
+                  "parentUUID": "96d8da06-c759-412d-9b87-8c23ee982dee",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "829d5b77-851f-4d23-bee4-14c7438bb89e",
+                "0adfcc9d-aaf7-4f8e-8641-e499f805992d"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 94,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "4da34c86-6137-47d6-b2ed-3843ec0af7ec",
+              "title": "Secondary style",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should have the secondary class",
+                  "fullTitle": "Test Button stories Secondary style should have the secondary class",
+                  "timedOut": null,
+                  "duration": 49,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "(0,_cypress_react__WEBPACK_IMPORTED_MODULE_1__.mount)( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Secondary, null));\ncy.get('button').should('have.class', 'storybook-button--secondary');",
+                  "err": {},
+                  "uuid": "c11bd568-30bc-4652-a409-d23b0bd031a0",
+                  "parentUUID": "4da34c86-6137-47d6-b2ed-3843ec0af7ec",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should have the small class (failure)",
+                  "fullTitle": "Test Button stories Secondary style should have the small class (failure)",
+                  "timedOut": null,
+                  "duration": 4348,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": "[{\"title\":\"Failed screenshot\",\"value\":\"screenshots/Button.stories.test.tsx/Test Button stories -- Secondary style -- should have the small class (failure) (failed).png\"}]",
+                  "code": "(0,_cypress_react__WEBPACK_IMPORTED_MODULE_1__.mount)( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Secondary, {\n  size: \"small\"\n}));\ncy.get('button').should('have.class', 'storybook-button-small');",
+                  "err": {
+                    "message": "AssertionError: Timed out retrying after 4000ms: expected '<button.storybook-button.storybook-button--small.storybook-button--secondary>' to have class 'storybook-button-small'",
+                    "estack": "AssertionError: Timed out retrying after 4000ms: expected '<button.storybook-button.storybook-button--small.storybook-button--secondary>' to have class 'storybook-button-small'\n    at $Chainer.<computed> [as should] (http://localhost:8080/__cypress/runner/cypress_runner.js:185269:176)\n    at Context.<anonymous> (http://localhost:8080/__cypress/src/spec-0.js:53:24)\n    at Context.runnable.fn (http://localhost:8080/__cypress/runner/cypress_runner.js:187243:23)\n    at callFn (http://localhost:8080/__cypress/runner/cypress_runner.js:140081:21)\n    at http://localhost:8080/__cypress/runner/cypress_runner.js:193785:30\n    at PassThroughHandlerContext.finallyHandler (http://localhost:8080/__cypress/runner/cypress_runner.js:23046:23)\n    at PassThroughHandlerContext.tryCatcher (http://localhost:8080/__cypress/runner/cypress_runner.js:26492:23)\n    at Promise._settlePromiseFromHandler (http://localhost:8080/__cypress/runner/cypress_runner.js:24427:31)",
+                    "diff": null
+                  },
+                  "uuid": "188cd172-60b8-421f-80ab-f6c639bfc72f",
+                  "parentUUID": "4da34c86-6137-47d6-b2ed-3843ec0af7ec",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "c11bd568-30bc-4652-a409-d23b0bd031a0"
+              ],
+              "failures": [
+                "188cd172-60b8-421f-80ab-f6c639bfc72f"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 4397,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [
+            "6fcb0cad-d028-40e8-9382-dfbdba121281"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 189,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "saveJson": true,
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

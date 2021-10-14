@@ -44,11 +44,22 @@ export const Header: React.FunctionComponent<HeaderProps> = ({
       </div>
       <div>
         {user ? (
-          <Button size="small" onClick={onLogout} label="Log out" />
+          <Button
+            data-testid="logout-btn"
+            size="small"
+            onClick={onLogout}
+            label="Log out"
+          />
         ) : (
           <>
-            <Button size="small" onClick={onLogin} label="Log in" />
             <Button
+              data-testid="login-btn"
+              size="small"
+              onClick={onLogin}
+              label="Log in"
+            />
+            <Button
+              data-testid="create-account-btn"
               primary
               size="small"
               onClick={onCreateAccount}

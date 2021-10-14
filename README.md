@@ -1,36 +1,43 @@
-<h1 align="center">Welcome to node-typescript-jest-template 👋</h1>
+<h1 align="center">Welcome to mochawesome-to-jest 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000" />
-  <a href="https://github.com/ludorival/node-typescript-jest-template#readme" target="_blank">
+  <a href="https://github.com/ludorival/mochawesome-to-jest#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
-  <a href="https://github.com/ludorival/node-typescript-jest-template/graphs/commit-activity" target="_blank">
-    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
-  </a>
-  <a href="https://github.com/ludorival/node-typescript-jest-template/blob/master/LICENSE" target="_blank">
-    <img alt="License: BSD--3--Clause" src="https://img.shields.io/github/license/ludorival/node-typescript-jest-template" />
+
+  <a href="https://github.com/ludorival/mochawesome-to-jest/blob/master/LICENSE" target="_blank">
+    <img alt="License: BSD--3--Clause" src="https://img.shields.io/github/license/ludorival/mochawesome-to-jest" />
   </a>
 </p>
 
-> A node module template using typescript and jest
+> Convert your mochawesome report to jest report
 
 ## Install
 
 ```sh
-yarn install
+npm install -D mochawesome-to-jest
 ```
 
-## Run tests
+## Usage
 
-```sh
-yarn run test
+```ts
+import convertToJestReport from 'mochawesome-to-jest'
+// import the mochawesome result depending where you have specified the reportDir
+import mochaTestResults from './reports/mochawesome.json'
+// convert the mocha report to jest report
+const results = convertToJestReport(mochaTestResults)
+console.log(results)
 ```
+
+## Application with Storybook + Jest + Cypress
+
+Refer to this [guide](Storybook+Cypress.md).
 
 ## Author
 
 👤 **Ludovic Dorival**
 
-* Github: [@ludorival](https://github.com/ludorival)
+- Github: [@ludorival](https://github.com/ludorival)
 
 ## Show your support
 
@@ -39,7 +46,8 @@ Give a ⭐️ if this project helped you!
 ## 📝 License
 
 Copyright © 2021 [Ludovic Dorival](https://github.com/ludorival).<br />
-This project is [BSD--3--Clause](https://github.com/ludorival/node-typescript-jest-template/blob/master/LICENSE) licensed.
+This project is [BSD--3--Clause](https://github.com/ludorival/mochawesome-to-jest/blob/master/LICENSE) licensed.
 
-***
+---
+
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
