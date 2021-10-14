@@ -30,7 +30,7 @@
     "copyReport": "cypress/reports/html/index.json"
   },
   "scripts": {
-    "build": "npm run clean && npm run lint && tsc",
+    "build": "npm run clean && tsc",
     "changelog": "conventional-changelog -p angular -u",
     "changelog:update": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
     "clean": "(rm -r ./.nyc_output || true) && (rm -r ./dist || true)",
@@ -42,7 +42,7 @@
     "prepare": "npm run build",
     "test": "cypress run-ct",
     "test:failsafe": "yarn test || true",
-    "pretest:ci":"yarn test:failsafe && yarn copyReport",
+    "pretest:ci": "yarn test:failsafe && yarn copyReport",
     "test:ci": "cypress run -C cypress.ci.json",
     "test:ci:open": "cypress open -C cypress.ci.json",
     "copyReport": "cp cypress/reports/html/index.json src/stories/reports/mochawesome.json",
